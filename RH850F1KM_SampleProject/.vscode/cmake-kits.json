@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Renesas RH850/F1KM CC-RH #1",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rh850-ccrh-toolchain-ex1.cmake",
+        "preferredGenerator": {
+            "name": "Ninja"
+        }
+    },
+    {
+        "name": "Renesas RH850/F1KM CC-RH #1 (Unix Makefiles Generator)",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rh850-ccrh-toolchain-ex1.cmake",
+        "preferredGenerator": {
+            "name": "Unix Makefiles"
+        }
+    },
+    {
+        "name": "Renesas RH850/F1KM CC-RH #2",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rh850-ccrh-toolchain-ex2.cmake",
+        "preferredGenerator": {
+            "name": "Ninja"
+        }
+    },
+    {
+        "name": "Renesas RH850/F1KM CC-RH #2 (Unix Makefiles Generator)",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rh850-ccrh-toolchain-ex2.cmake",
+        "preferredGenerator": {
+            "name": "Unix Makefiles"
+        }
+    },
+    {
+        "name": "Renesas RH850/F1KM CC-RH #3",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rh850-ccrh-toolchain-ex3.cmake",
+        "preferredGenerator": {
+            "name": "Ninja"
+        }
+    },
+    {
+        "name": "Renesas RH850/F1KM CC-RH #3 (Unix Makefiles Generator)",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rh850-ccrh-toolchain-ex3.cmake",
+        "preferredGenerator": {
+            "name": "Unix Makefiles"
+        }
+    },
+    {
+        "name": "Renesas RH850/F1KM CC-RH #4",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rh850-ccrh-toolchain-ex4.cmake",
+        "preferredGenerator": {
+            "name": "Ninja"
+        }
+    },
+    {
+        "name": "Renesas RH850/F1KM CC-RH #4 (Unix Makefiles Generator)",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rh850-ccrh-toolchain-ex4.cmake",
+        "preferredGenerator": {
+            "name": "Unix Makefiles"
+        }
+    },
+    {
+        "name": "Renesas RH850/F1KM CC-RH #5",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rh850-ccrh-toolchain-ex5.cmake",
+        "preferredGenerator": {
+            "name": "Ninja"
+        }
+    },
+    {
+        "name": "Renesas RH850/F1KM CC-RH #5 (Unix Makefiles Generator)",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rh850-ccrh-toolchain-ex5.cmake",
+        "preferredGenerator": {
+            "name": "Unix Makefiles"
+        }
+    },
+    {
+        "name": "Renesas RH850/F1KM CC-RH #6",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rh850-ccrh-toolchain-ex6.cmake",
+        "preferredGenerator": {
+            "name": "Ninja"
+        }
+    },
+    {
+        "name": "Renesas RH850/F1KM CC-RH #6 (Unix Makefiles Generator)",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rh850-ccrh-toolchain-ex6.cmake",
+        "preferredGenerator": {
+            "name": "Unix Makefiles"
+        }
+    }
+]
