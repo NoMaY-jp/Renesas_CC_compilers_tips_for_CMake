@@ -1,10 +1,10 @@
-set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/../../cmake-3.24.2-patch/Modules") # For patches.
+set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/../../cmake-3.26.0-patch/Modules") # For patches.
 
 set(CMAKE_SYSTEM_NAME Generic)
 
 # You can set the tool paths here in stead of setting the environment variable `Path` on Windows.
-set(TOOLCHAIN_PATH C:/Renesas/CS+/CC/CC-RL/V1.11.00/bin) # Quote the path with "..." if it includes space.
-set(EXTERNAL_TOOLCHAIN_PATH C:/Renesas/e2studio64/SupportFiles/.eclipse/com.renesas.platform_275843822/Utilities/ccrl) # Quote the path with "..." if it includes space.  # For e2 studio.
+set(TOOLCHAIN_PATH C:/Renesas/CS+/CC/CC-RL/V1.12.00/bin) # Quote the path with "..." if it includes space.
+set(EXTERNAL_TOOLCHAIN_PATH C:/Renesas/e2studio64/SupportFiles/.eclipse/com.renesas.platform_733684649/Utilities/ccrl) # Quote the path with "..." if it includes space.  # For e2 studio.
 
 set(CMAKE_PROGRAM_PATH ${TOOLCHAIN_PATH} ${EXTERNAL_TOOLCHAIN_PATH})
 
@@ -82,13 +82,14 @@ set(CMAKE_EXE_LINKER_FLAGS "\
 # Note: Renesas compiler options' additional behavior
 #----------------------------------------------------
 
-# In case of other than Ninja, `-P` and `-S` cannot be used. Please quote the option
-# with single quotation character as follow:
-# '-S'
-# '-P'
+# The following usage is deprecated because CMake 3.26.0-rc2 no longer causes any problem.
+## In case of other than Ninja, `-P` and `-S` cannot be used. Please quote the option
+## with single quotation character as follow:
+## '-S'
+## '-P'
 
 #---------------------------------------------------------------------
-# Note: DebugComp, Internal and Utilities folder location of e² studio
+# Note: DebugComp, Internal and Utilities folder location of e2 studio
 #---------------------------------------------------------------------
 
 # Renesas' FAQ

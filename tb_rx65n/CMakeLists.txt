@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.24.2 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.26.0 FATAL_ERROR)
 
 if(CMAKE_TOOLCHAIN_FILE MATCHES "(ex2xx|ex4xx|ex6xx)")
     include(${CMAKE_TOOLCHAIN_FILE}) # For the `EXAMPLE_CXX_PROJ_TYPE` variable.
@@ -17,7 +17,9 @@ endif()
 
 set(GSG_BASE_DIR ${CMAKE_SOURCE_DIR})
 
-set(DEBUG_RSP_FILE FALSE) # TRUE or FALSE
+if(NOT DEFINED DEBUG_RSP_FILE)
+    set(DEBUG_RSP_FILE FALSE) # TRUE or FALSE
+endif()
 include(${GSG_BASE_DIR}/dbg_rspf_src/CMakeLists_DEBUG_RSP_FILE.txt)
 
 if(COMMAND SET_DIRECTORY_OPTIONS)

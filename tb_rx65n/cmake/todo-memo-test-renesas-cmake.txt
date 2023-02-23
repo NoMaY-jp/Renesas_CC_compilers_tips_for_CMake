@@ -17,5 +17,7 @@ FIXME: Lack of test patterns:
 (*) Linker's additional behavior
 (*) CC-RX Assembler's additional behavior
 (*) CC-RX C++'s test_dep_scan_etc_cpp.{cpp, h}
+(*) CC-RL C++'s test_dep_scan_etc_cpp.{cpp, h}
+(*) `done` or `failed` of compiler ABI info and features check
 
 and more...

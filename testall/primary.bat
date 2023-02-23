@@ -101,12 +101,12 @@ rem Ninja
 echo\
 echo\
 mkdir %TESTROOT%\%1\build
-set CMDLINE="%CMAKE%" --no-warn-unused-cli -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo -DCMAKE_TOOLCHAIN_FILE:FILEPATH=%TESTROOT%\%1\cmake\%2.cmake -S=%TESTROOT%\%1 -B=%TESTROOT%\%1\build -G Ninja -D_RENESAS_NIGHTLY_TEST_MSG=2
+set CMDLINE="%CMAKE%" --no-warn-unused-cli -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo -DCMAKE_TOOLCHAIN_FILE:FILEPATH=%TESTROOT%\%1\cmake\%2.cmake -S=%TESTROOT%\%1 -B=%TESTROOT%\%1\build -G Ninja -DDEBUG_RSP_FILE:BOOL=FALSE -D_RENESAS_NIGHTLY_TEST_MSG=2
 echo %CMDLINE%
 %CMDLINE%
 if errorlevel 1 (
     choice /t 3 /d y>nul
-    move %TESTROOT%\%1\build %TESTROOT%\testall\build_%1_%2_Ninja>nul
+    move %TESTROOT%\%1\build %TESTROOT%\testall\primary\build_%1_%2_Ninja>nul
     goto :fail
 )
 set CMDLINE="%CMAKE%" --build %TESTROOT%\%1\build --config RelWithDebInfo --target all --
@@ -114,27 +114,27 @@ echo %CMDLINE%
 %CMDLINE%
 if errorlevel 1 (
     choice /t 3 /d y>nul
-    move %TESTROOT%\%1\build %TESTROOT%\testall\build_%1_%2_Ninja>nul
+    move %TESTROOT%\%1\build %TESTROOT%\testall\primary\build_%1_%2_Ninja>nul
     goto :fail
 )
 if not exist "%TESTROOT%\%1\build\%1.%3" (
     choice /t 3 /d y>nul
-    move %TESTROOT%\%1\build %TESTROOT%\testall\build_%1_%2_Ninja>nul
+    move %TESTROOT%\%1\build %TESTROOT%\testall\primary\build_%1_%2_Ninja>nul
     echo\
     echo ERROR: The following file does not exist.
-    echo %TESTROOT%\testall\build_%1_%2_Ninja\%1.%3
+    echo %TESTROOT%\testall\primary\build_%1_%2_Ninja\%1.%3
     goto :fail
 )
 if not exist "%TESTROOT%\%1\build\%1.%4" (
     choice /t 3 /d y>nul
-    move %TESTROOT%\%1\build %TESTROOT%\testall\build_%1_%2_Ninja>nul
+    move %TESTROOT%\%1\build %TESTROOT%\testall\primary\build_%1_%2_Ninja>nul
     echo\
     echo ERROR: The following file does not exist.
-    echo %TESTROOT%\testall\build_%1_%2_Ninja\%1.%4
+    echo %TESTROOT%\testall\primary\build_%1_%2_Ninja\%1.%4
     goto :fail
 )
 if not "%~5" == "p,s" goto Ninja_skip_p_s
-    set CMDLINE="%CMAKE%" --no-warn-unused-cli -DEXAMPLE_ALT_OUTPUT_TYPE=1 -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo -DCMAKE_TOOLCHAIN_FILE:FILEPATH=%TESTROOT%\%1\cmake\%2.cmake -S=%TESTROOT%\%1 -B=%TESTROOT%\%1\build -G Ninja -D_RENESAS_NIGHTLY_TEST_MSG=2
+    set CMDLINE="%CMAKE%" --no-warn-unused-cli -DEXAMPLE_ALT_OUTPUT_TYPE=1 -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo -DCMAKE_TOOLCHAIN_FILE:FILEPATH=%TESTROOT%\%1\cmake\%2.cmake -S=%TESTROOT%\%1 -B=%TESTROOT%\%1\build -G Ninja -DDEBUG_RSP_FILE:BOOL=FALSE -D_RENESAS_NIGHTLY_TEST_MSG=2
     echo %CMDLINE%
     %CMDLINE%
     set CMDLINE="%CMAKE%" --build %TESTROOT%\%1\build --config RelWithDebInfo --target all --
@@ -142,19 +142,19 @@ if not "%~5" == "p,s" goto Ninja_skip_p_s
     %CMDLINE%
     if errorlevel 1 (
         choice /t 3 /d y>nul
-        move %TESTROOT%\%1\build %TESTROOT%\testall\build_%1_%2_Ninja>nul
+        move %TESTROOT%\%1\build %TESTROOT%\testall\primary\build_%1_%2_Ninja>nul
         goto :fail
     )
     if not exist "%TESTROOT%\%1\build\test_dep_scan_etc_c.p" (
         choice /t 3 /d y>nul
-        move %TESTROOT%\%1\build %TESTROOT%\testall\build_%1_%2_Ninja>nul
+        move %TESTROOT%\%1\build %TESTROOT%\testall\primary\build_%1_%2_Ninja>nul
         echo\
         echo ERROR: The following file does not exist.
-        echo %TESTROOT%\testall\build_%1_%2__Ninja\test_dep_scan_etc_c.p
+        echo %TESTROOT%\testall\primary\build_%1_%2__Ninja\test_dep_scan_etc_c.p
         goto :fail
     )
 
-    set CMDLINE="%CMAKE%" --no-warn-unused-cli -DEXAMPLE_ALT_OUTPUT_TYPE=2 -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo -DCMAKE_TOOLCHAIN_FILE:FILEPATH=%TESTROOT%\%1\cmake\%2.cmake -S=%TESTROOT%\%1 -B=%TESTROOT%\%1\build -G Ninja -D_RENESAS_NIGHTLY_TEST_MSG=2
+    set CMDLINE="%CMAKE%" --no-warn-unused-cli -DEXAMPLE_ALT_OUTPUT_TYPE=2 -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo -DCMAKE_TOOLCHAIN_FILE:FILEPATH=%TESTROOT%\%1\cmake\%2.cmake -S=%TESTROOT%\%1 -B=%TESTROOT%\%1\build -G Ninja -DDEBUG_RSP_FILE:BOOL=FALSE -D_RENESAS_NIGHTLY_TEST_MSG=2
     echo %CMDLINE%
     %CMDLINE%
     set CMDLINE="%CMAKE%" --build %TESTROOT%\%1\build --config RelWithDebInfo --target all --
@@ -162,49 +162,20 @@ if not "%~5" == "p,s" goto Ninja_skip_p_s
     %CMDLINE%
     if errorlevel 1 (
         choice /t 3 /d y>nul
-        move %TESTROOT%\%1\build %TESTROOT%\testall\build_%1_%2_Ninja>nul
+        move %TESTROOT%\%1\build %TESTROOT%\testall\primary\build_%1_%2_Ninja>nul
         goto :fail
     )
     if not exist "%TESTROOT%\%1\build\test_dep_scan_etc_c.s" (
         choice /t 3 /d y>nul
-        move %TESTROOT%\%1\build %TESTROOT%\testall\build_%1_%2_Ninja>nul
+        move %TESTROOT%\%1\build %TESTROOT%\testall\primary\build_%1_%2_Ninja>nul
         echo\
         echo ERROR: The following file does not exist.
-        echo %TESTROOT%\testall\build_%1_%2__Ninja\test_dep_scan_etc_c.s
-        goto :fail
-    )
-
-    rem del "%TESTROOT%\%1\build\test_dep_scan_etc_c.p"
-    del "%TESTROOT%\%1\build\test_dep_scan_etc_c.s"
-    set CMDLINE="%CMAKE%" --no-warn-unused-cli -DEXAMPLE_ALT_OUTPUT_TYPE=0 -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo -DCMAKE_TOOLCHAIN_FILE:FILEPATH=%TESTROOT%\%1\cmake\%2.cmake -S=%TESTROOT%\%1 -B=%TESTROOT%\%1\build -G Ninja -D_RENESAS_NIGHTLY_TEST_MSG=2
-    echo %CMDLINE%
-    %CMDLINE%
-    set CMDLINE="%CMAKE%" --build %TESTROOT%\%1\build --config RelWithDebInfo --target all --
-    echo %CMDLINE%
-    %CMDLINE%
-
-    set CMDLINE="%CMAKE%" --no-warn-unused-cli -DEXAMPLE_ALT_OUTPUT_TYPE=4 -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo -DCMAKE_TOOLCHAIN_FILE:FILEPATH=%TESTROOT%\%1\cmake\%2.cmake -S=%TESTROOT%\%1 -B=%TESTROOT%\%1\build -G Ninja -D_RENESAS_NIGHTLY_TEST_MSG=2
-    echo %CMDLINE%
-    %CMDLINE%
-    set CMDLINE="%CMAKE%" --build %TESTROOT%\%1\build --config RelWithDebInfo --target all --
-    echo %CMDLINE%
-    %CMDLINE%
-    if errorlevel 1 (
-        choice /t 3 /d y>nul
-        move %TESTROOT%\%1\build %TESTROOT%\testall\build_%1_%2_Ninja>nul
-        goto :fail
-    )
-    if not exist "%TESTROOT%\%1\build\test_dep_scan_etc_c.s" (
-        choice /t 3 /d y>nul
-        move %TESTROOT%\%1\build %TESTROOT%\testall\build_%1_%2_Ninja>nul
-        echo\
-        echo ERROR: The following file does not exist.
-        echo %TESTROOT%\testall\build_%1_%2__Ninja\test_dep_scan_etc_c.s
+        echo %TESTROOT%\testall\primary\build_%1_%2__Ninja\test_dep_scan_etc_c.s
         goto :fail
     )
 :Ninja_skip_p_s
 choice /t 3 /d y>nul
-move %TESTROOT%\%1\build %TESTROOT%\testall\build_%1_%2_Ninja>nul
+move %TESTROOT%\%1\build %TESTROOT%\testall\primary\build_%1_%2_Ninja>nul
 echo\
 echo PASS: %1.%3 is successfully built.
 echo PASS: %1.%4 is successfully built.
@@ -217,12 +188,12 @@ rem Unix Makefile
 echo\
 echo\
 mkdir %TESTROOT%\%1\build
-set CMDLINE="%CMAKE%" --no-warn-unused-cli -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo -DCMAKE_TOOLCHAIN_FILE:FILEPATH=%TESTROOT%\%1\cmake\%2.cmake -S=%TESTROOT%\%1 -B=%TESTROOT%\%1\build -G "Unix Makefiles" -D_RENESAS_NIGHTLY_TEST_MSG=2
+set CMDLINE="%CMAKE%" --no-warn-unused-cli -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo -DCMAKE_TOOLCHAIN_FILE:FILEPATH=%TESTROOT%\%1\cmake\%2.cmake -S=%TESTROOT%\%1 -B=%TESTROOT%\%1\build -G "Unix Makefiles" -DDEBUG_RSP_FILE:BOOL=FALSE -D_RENESAS_NIGHTLY_TEST_MSG=2
 echo %CMDLINE%
 %CMDLINE%
 if errorlevel 1 (
     choice /t 3 /d y>nul
-    move %TESTROOT%\%1\build %TESTROOT%\testall\build_%1_%2_UnixMakefile>nul
+    move %TESTROOT%\%1\build %TESTROOT%\testall\primary\build_%1_%2_UnixMakefile>nul
     goto :fail
 )
 set CMDLINE="%CMAKE%" --build %TESTROOT%\%1\build --config RelWithDebInfo --target all --
@@ -230,27 +201,27 @@ echo %CMDLINE%
 %CMDLINE%
 if errorlevel 1 (
     choice /t 3 /d y>nul
-    move %TESTROOT%\%1\build %TESTROOT%\testall\build_%1_%2_UnixMakefile>nul
+    move %TESTROOT%\%1\build %TESTROOT%\testall\primary\build_%1_%2_UnixMakefile>nul
     goto :fail
 )
 if not exist "%TESTROOT%\%1\build\%1.%3" (
     echo\
     choice /t 3 /d y>nul
-    move %TESTROOT%\%1\build %TESTROOT%\testall\build_%1_%2_UnixMakefile>nul
+    move %TESTROOT%\%1\build %TESTROOT%\testall\primary\build_%1_%2_UnixMakefile>nul
     echo ERROR: The following file does not exist.
-    echo %TESTROOT%\testall\build_%1_%2_UnixMakefile\%1.%3
+    echo %TESTROOT%\testall\primary\build_%1_%2_UnixMakefile\%1.%3
     goto :fail
 )
 if not exist "%TESTROOT%\%1\build\%1.%4" (
     echo\
     choice /t 3 /d y>nul
-    move %TESTROOT%\%1\build %TESTROOT%\testall\build_%1_%2_UnixMakefile>nul
+    move %TESTROOT%\%1\build %TESTROOT%\testall\primary\build_%1_%2_UnixMakefile>nul
     echo ERROR: The following file does not exist.
-    echo %TESTROOT%\testall\build_%1_%2_UnixMakefile\%1.%4
+    echo %TESTROOT%\testall\primary\build_%1_%2_UnixMakefile\%1.%4
     goto :fail
 )
 if not "%~5" == "p,s" goto UnixMakefile_skip_p_s
-    set CMDLINE="%CMAKE%" --no-warn-unused-cli -DEXAMPLE_ALT_OUTPUT_TYPE=1 -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo -DCMAKE_TOOLCHAIN_FILE:FILEPATH=%TESTROOT%\%1\cmake\%2.cmake -S=%TESTROOT%\%1 -B=%TESTROOT%\%1\build -G "Unix Makefiles" -D_RENESAS_NIGHTLY_TEST_MSG=2
+    set CMDLINE="%CMAKE%" --no-warn-unused-cli -DEXAMPLE_ALT_OUTPUT_TYPE=1 -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo -DCMAKE_TOOLCHAIN_FILE:FILEPATH=%TESTROOT%\%1\cmake\%2.cmake -S=%TESTROOT%\%1 -B=%TESTROOT%\%1\build -G "Unix Makefiles" -DDEBUG_RSP_FILE:BOOL=FALSE -D_RENESAS_NIGHTLY_TEST_MSG=2
     echo %CMDLINE%
     %CMDLINE%
     set CMDLINE="%CMAKE%" --build %TESTROOT%\%1\build --config RelWithDebInfo --target all --
@@ -258,19 +229,19 @@ if not "%~5" == "p,s" goto UnixMakefile_skip_p_s
     %CMDLINE%
     if errorlevel 1 (
         choice /t 3 /d y>nul
-        move %TESTROOT%\%1\build %TESTROOT%\testall\build_%1_%2_UnixMakefile>nul
+        move %TESTROOT%\%1\build %TESTROOT%\testall\primary\build_%1_%2_UnixMakefile>nul
         goto :fail
     )
     if not exist "%TESTROOT%\%1\build\test_dep_scan_etc_c.p" (
         choice /t 3 /d y>nul
-        move %TESTROOT%\%1\build %TESTROOT%\testall\build_%1_%2_UnixMakefile>nul
+        move %TESTROOT%\%1\build %TESTROOT%\testall\primary\build_%1_%2_UnixMakefile>nul
         echo\
         echo ERROR: The following file does not exist.
-        echo %TESTROOT%\testall\build_%1_%2_UnixMakefile\test_dep_scan_etc_c.p
+        echo %TESTROOT%\testall\primary\build_%1_%2_UnixMakefile\test_dep_scan_etc_c.p
         goto :fail
     )
 
-    set CMDLINE="%CMAKE%" --no-warn-unused-cli -DEXAMPLE_ALT_OUTPUT_TYPE=2 -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo -DCMAKE_TOOLCHAIN_FILE:FILEPATH=%TESTROOT%\%1\cmake\%2.cmake -S=%TESTROOT%\%1 -B=%TESTROOT%\%1\build -G "Unix Makefiles" -D_RENESAS_NIGHTLY_TEST_MSG=2
+    set CMDLINE="%CMAKE%" --no-warn-unused-cli -DEXAMPLE_ALT_OUTPUT_TYPE=2 -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo -DCMAKE_TOOLCHAIN_FILE:FILEPATH=%TESTROOT%\%1\cmake\%2.cmake -S=%TESTROOT%\%1 -B=%TESTROOT%\%1\build -G "Unix Makefiles" -DDEBUG_RSP_FILE:BOOL=FALSE -D_RENESAS_NIGHTLY_TEST_MSG=2
     echo %CMDLINE%
     %CMDLINE%
     set CMDLINE="%CMAKE%" --build %TESTROOT%\%1\build --config RelWithDebInfo --target all --
@@ -278,49 +249,20 @@ if not "%~5" == "p,s" goto UnixMakefile_skip_p_s
     %CMDLINE%
     if errorlevel 1 (
         choice /t 3 /d y>nul
-        move %TESTROOT%\%1\build %TESTROOT%\testall\build_%1_%2_UnixMakefile>nul
+        move %TESTROOT%\%1\build %TESTROOT%\testall\primary\build_%1_%2_UnixMakefile>nul
         goto :fail
     )
     if not exist "%TESTROOT%\%1\build\test_dep_scan_etc_c.s" (
         choice /t 3 /d y>nul
-        move %TESTROOT%\%1\build %TESTROOT%\testall\build_%1_%2_UnixMakefile>nul
+        move %TESTROOT%\%1\build %TESTROOT%\testall\primary\build_%1_%2_UnixMakefile>nul
         echo\
         echo ERROR: The following file does not exist.
-        echo %TESTROOT%\testall\build_%1_%2_UnixMakefile\test_dep_scan_etc_c.s
-        goto :fail
-    )
-
-    rem del "%TESTROOT%\%1\build\test_dep_scan_etc_c.p"
-    del "%TESTROOT%\%1\build\test_dep_scan_etc_c.s"
-    set CMDLINE="%CMAKE%" --no-warn-unused-cli -DEXAMPLE_ALT_OUTPUT_TYPE=0 -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo -DCMAKE_TOOLCHAIN_FILE:FILEPATH=%TESTROOT%\%1\cmake\%2.cmake -S=%TESTROOT%\%1 -B=%TESTROOT%\%1\build -G "Unix Makefiles" -D_RENESAS_NIGHTLY_TEST_MSG=2
-    echo %CMDLINE%
-    %CMDLINE%
-    set CMDLINE="%CMAKE%" --build %TESTROOT%\%1\build --config RelWithDebInfo --target all --
-    echo %CMDLINE%
-    %CMDLINE%
-
-    set CMDLINE="%CMAKE%" --no-warn-unused-cli -DEXAMPLE_ALT_OUTPUT_TYPE=4 -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo -DCMAKE_TOOLCHAIN_FILE:FILEPATH=%TESTROOT%\%1\cmake\%2.cmake -S=%TESTROOT%\%1 -B=%TESTROOT%\%1\build -G "Unix Makefiles" -D_RENESAS_NIGHTLY_TEST_MSG=2
-    echo %CMDLINE%
-    %CMDLINE%
-    set CMDLINE="%CMAKE%" --build %TESTROOT%\%1\build --config RelWithDebInfo --target all --
-    echo %CMDLINE%
-    %CMDLINE%
-    if errorlevel 1 (
-        choice /t 3 /d y>nul
-        move %TESTROOT%\%1\build %TESTROOT%\testall\build_%1_%2_UnixMakefile>nul
-        goto :fail
-    )
-    if not exist "%TESTROOT%\%1\build\test_dep_scan_etc_c.s" (
-        choice /t 3 /d y>nul
-        move %TESTROOT%\%1\build %TESTROOT%\testall\build_%1_%2_UnixMakefile>nul
-        echo\
-        echo ERROR: The following file does not exist.
-        echo %TESTROOT%\testall\build_%1_%2_UnixMakefile\test_dep_scan_etc_c.s
+        echo %TESTROOT%\testall\primary\build_%1_%2_UnixMakefile\test_dep_scan_etc_c.s
         goto :fail
     )
 :UnixMakefile_skip_p_s
 choice /t 3 /d y>nul
-move %TESTROOT%\%1\build %TESTROOT%\testall\build_%1_%2_UnixMakefile>nul
+move %TESTROOT%\%1\build %TESTROOT%\testall\primary\build_%1_%2_UnixMakefile>nul
 echo\
 echo PASS: %1.%3 is successfully built.
 echo PASS: %1.%4 is successfully built.
@@ -342,13 +284,15 @@ goto :EOF
 :testall_folder_check
 
 rem Ninja
-if exist "%TESTROOT%\testall\build_%1_%2_Ninja" echo ERROR: The following folder already exists:
-if exist "%TESTROOT%\testall\build_%1_%2_Ninja" echo %TESTROOT%\testall\build_%1_%2_Ninja
-if exist "%TESTROOT%\testall\build_%1_%2_Ninja" exit
+if not exist "%TESTROOT%\testall\primary" mkdir "%TESTROOT%\testall\primary"
+if exist "%TESTROOT%\testall\primary\build_%1_%2_Ninja" echo ERROR: The following folder already exists:
+if exist "%TESTROOT%\testall\primary\build_%1_%2_Ninja" echo %TESTROOT%\testall\primary\build_%1_%2_Ninja
+if exist "%TESTROOT%\testall\primary\build_%1_%2_Ninja" exit
 
 rem Unix Makefile
-if exist "%TESTROOT%\testall\build_%1_%2_UnixMakefile" echo ERROR: The following folder already exists:
-if exist "%TESTROOT%\testall\build_%1_%2_UnixMakefile" echo %TESTROOT%\testall\build_%1_%2_UnixMakefile
+if not exist "%TESTROOT%\testall\primary" mkdir "%TESTROOT%\testall\primary"
+if exist "%TESTROOT%\testall\primary\build_%1_%2_UnixMakefile" echo ERROR: The following folder already exists:
+if exist "%TESTROOT%\testall\primary\build_%1_%2_UnixMakefile" echo %TESTROOT%\testall\primary\build_%1_%2_UnixMakefile
 if exist "%TESTROOT%testall\\%1_%2_UnixMakefile" exit
 
 goto :EOF

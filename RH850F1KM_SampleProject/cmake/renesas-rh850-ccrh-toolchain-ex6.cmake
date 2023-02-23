@@ -1,10 +1,10 @@
-set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/../../cmake-3.24.2-patch/Modules") # For patches.
+set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/../../cmake-3.26.0-patch/Modules") # For patches.
 
 set(CMAKE_SYSTEM_NAME Generic)
 
 # You can set the tool paths here in stead of setting the environment variable `Path` on Windows.
-set(TOOLCHAIN_PATH C:/Renesas/CS+/CC/CC-RH/V2.04.00/bin) # Quote the path with "..." if it includes space.
-set(EXTERNAL_TOOLCHAIN_PATH C:/Renesas/e2studio64_v202207/eclipse/plugins/com.renesas.ide.supportfiles.rh850.ccrh.build.win32.x86_64_1.0.0.v20220616-0824/ccrh) # Quote the path with "..." if it includes space.  # For e2 studio.
+set(TOOLCHAIN_PATH C:/Renesas/CS+/CC/CC-RH/V2.05.00/bin) # Quote the path with "..." if it includes space.
+set(EXTERNAL_TOOLCHAIN_PATH C:/Renesas/e2studio64_v202301/eclipse/plugins/com.renesas.ide.supportfiles.rh850.ccrh.build.win32.x86_64_1.0.0.v20220616-0824/ccrh) # Quote the path with "..." if it includes space.  # For e2 studio.
 
 set(CMAKE_C_COMPILER ${TOOLCHAIN_PATH}/ccrh.exe)
 set(CMAKE_RENESAS_XCONVERTER ${EXTERNAL_TOOLCHAIN_PATH}/renesas_cc_converter.exe) # In case of CS+, define the tool as "" or exclude the tool from `Path`.
@@ -46,26 +46,14 @@ target_link_options(RH850F1KM_SampleProject PRIVATE
 
 # The following setting selects the output type of compilation of the source.
 if(NOT DEFINED EXAMPLE_ALT_OUTPUT_TYPE)
-  set(EXAMPLE_ALT_OUTPUT_TYPE 0) # 0: Usual object or 1: Preprocessed source or 2,4: Assembly source.
+  set(EXAMPLE_ALT_OUTPUT_TYPE 0) # 0: Usual object or 1: Preprocessed source or 2: Assembly source.
 endif()
 if(EXAMPLE_ALT_OUTPUT_TYPE EQUAL 1)
   set_property(SOURCE ${GSG_BASE_DIR}/src/test_dep_scan_etc_c.c
   APPEND PROPERTY COMPILE_OPTIONS
-  # As of today, compiler's `-P` option needs a workaround due to conflict with CMake's `-P` option for other than Ninja.
-  $<IF:$<STREQUAL:${CMAKE_GENERATOR},Ninja>,-P,'-P'> -otest_dep_scan_etc_c.p
+  -P -otest_dep_scan_etc_c.p
   )
 elseif(EXAMPLE_ALT_OUTPUT_TYPE EQUAL 2)
-  set_property(SOURCE ${GSG_BASE_DIR}/src/test_dep_scan_etc_c.c
-  APPEND PROPERTY COMPILE_OPTIONS
-  # CMake 3.24.0 no longer needs this workaround but it is kept for a while for the backward compatibilty.
-  $<IF:$<STREQUAL:${CMAKE_GENERATOR},Ninja>,-S,'-S'> -otest_dep_scan_etc_c.s
-  )
-#elseif(EXAMPLE_ALT_OUTPUT_TYPE EQUAL 3) # As of today, this setting does not work.
-#  set_property(SOURCE ${GSG_BASE_DIR}/src/test_dep_scan_etc_c.c
-#  APPEND PROPERTY COMPILE_OPTIONS
-#  -P -otest_dep_scan_etc_c.p
-#  )
-elseif(EXAMPLE_ALT_OUTPUT_TYPE EQUAL 4)
   set_property(SOURCE ${GSG_BASE_DIR}/src/test_dep_scan_etc_c.c
   APPEND PROPERTY COMPILE_OPTIONS
   -S -otest_dep_scan_etc_c.s
@@ -109,13 +97,14 @@ endmacro()
 # Note: Renesas compiler options' additional behavior
 #----------------------------------------------------
 
-# In case of other than Ninja, `-P` and `-S` cannot be used. Please quote the option
-# with single quotation character as follow:
-# '-S'
-# '-P'
+# The following usage is deprecated because CMake 3.26.0-rc2 no longer causes any problem.
+## In case of other than Ninja, `-P` and `-S` cannot be used. Please quote the option
+## with single quotation character as follow:
+## '-S'
+## '-P'
 
 #---------------------------------------------------------------------
-# Note: DebugComp, Internal and Utilities folder location of e² studio
+# Note: DebugComp, Internal and Utilities folder location of e2 studio
 #---------------------------------------------------------------------
 
 # Renesas' FAQ

@@ -1,14 +1,14 @@
 TODO:
 
 * Fix FIXMEs
-* CMake's `--` option for `cmake -P <cmake-script-file> [-- <unparsed-options>...]` does not seem to work.
-This issue has to be reported and fixed.
 * Reconsider the use of `nul` in the code for detecting CC-RX's Assembler
 * Reconsider the process for checking CC-RX's Compiler's C++ features (there are no C++ standards)
-* In case of using Ninja in DOS prompt, setting `chcp 65001` is necessary to display Japanese characters correctly.	
+* In case of using Ninja in DOS prompt, setting `chcp 65001` is necessary to display Japanese characters correctly.
 * Is it better to add `-goptimize` to all build configurations(DEBUG, MINSIZEREL, RELEASE, RELWITHDEBINFO)?
 * CC-RX's Assembler's listfile extension handling like CC-{RL, RH}'s Assembler
 * CC-RL's SMS Assembler
+* CC-RL's -Olite option
+* CC-RL's C++14 feature
 * udcollector
 
 * Does Ninja's `multi-config` need additional care?

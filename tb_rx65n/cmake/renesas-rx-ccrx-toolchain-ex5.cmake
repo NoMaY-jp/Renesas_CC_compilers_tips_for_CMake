@@ -1,10 +1,10 @@
-set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/../../cmake-3.24.2-patch/Modules") # For patches.
+set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/../../cmake-3.26.0-patch/Modules") # For patches.
 
 set(CMAKE_SYSTEM_NAME Generic)
 
 # You can set the tool paths here in stead of setting the environment variable `Path` on Windows.
-set(TOOLCHAIN_PATH C:/Renesas/CS+/CC/CC-RX/V3.04.00/bin) # Quote the path with "..." if it includes space.
-set(EXTERNAL_TOOLCHAIN_PATH C:/Renesas/e2studio64/SupportFiles/.eclipse/com.renesas.platform_275843822/Utilities/ccrx) # Quote the path with "..." if it includes space.  # For e2 studio.
+set(TOOLCHAIN_PATH C:/Renesas/CS+/CC/CC-RX/V3.05.00/bin) # Quote the path with "..." if it includes space.
+set(EXTERNAL_TOOLCHAIN_PATH C:/Renesas/e2studio64/SupportFiles/.eclipse/com.renesas.platform_733684649/Utilities/ccrx) # Quote the path with "..." if it includes space.  # For e2 studio.
 
 set(CMAKE_PROGRAM_PATH ${TOOLCHAIN_PATH} ${EXTERNAL_TOOLCHAIN_PATH})
 
@@ -122,7 +122,7 @@ endmacro()
 # regarded as being specified with 1. (i.e `-define=<symbol>=1`)
 
 #---------------------------------------------------------------------
-# Note: DebugComp, Internal and Utilities folder location of e² studio
+# Note: DebugComp, Internal and Utilities folder location of e2 studio
 #---------------------------------------------------------------------
 
 # Renesas' FAQ

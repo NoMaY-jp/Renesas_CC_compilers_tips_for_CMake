@@ -1,4 +1,4 @@
-set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/../../cmake-3.24.2-patch/Modules") # For patches.
+set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/../../cmake-3.26.0-patch/Modules") # For patches.
 
 set(CMAKE_SYSTEM_NAME Generic)
 
@@ -8,8 +8,8 @@ if(NOT DEFINED EXAMPLE_CXX_PROJ_TYPE)
 endif()
 
 # You can set the tool paths here in stead of setting the environment variable `Path` on Windows.
-set(TOOLCHAIN_PATH C:/Renesas/CS+/CC/CC-RX/V3.04.00/bin) # Quote the path with "..." if it includes space.
-set(EXTERNAL_TOOLCHAIN_PATH C:/Renesas/e2studio64/SupportFiles/.eclipse/com.renesas.platform_275843822/Utilities/ccrx) # Quote the path with "..." if it includes space.  # For e2 studio.
+set(TOOLCHAIN_PATH C:/Renesas/CS+/CC/CC-RX/V3.05.00/bin) # Quote the path with "..." if it includes space.
+set(EXTERNAL_TOOLCHAIN_PATH C:/Renesas/e2studio64/SupportFiles/.eclipse/com.renesas.platform_733684649/Utilities/ccrx) # Quote the path with "..." if it includes space.  # For e2 studio.
 
 # The following setting improves the detection process of CC-RX a little bit faster.
 set(ENV{BIN_RX} ${TOOLCHAIN_PATH})
@@ -157,7 +157,7 @@ set(CMAKE_EXE_LINKER_FLAGS "-optimize=short_format,branch,symbol_delete -stack \
 # regarded as being specified with 1. (i.e `-define=<symbol>=1`)
 
 #---------------------------------------------------------------------
-# Note: DebugComp, Internal and Utilities folder location of e² studio
+# Note: DebugComp, Internal and Utilities folder location of e2 studio
 #---------------------------------------------------------------------
 
 # Renesas' FAQ

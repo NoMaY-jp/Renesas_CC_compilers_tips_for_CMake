@@ -135,14 +135,13 @@ if(NOT CMAKE_ASM${ASM_DIALECT}_COMPILER_ID)
   if("x${CMAKE_ASM${ASM_DIALECT}_COMPILER_ID}" STREQUAL "xIAR")
     # primary necessary to detect architecture, so the right archiver and linker can be picked
     # eg. "IAR Assembler V8.10.1.12857/W32 for ARM" or "IAR Assembler V4.11.1.4666 for Renesas RX"
-    # Cut out identification first, newline handling is a pain
+    # Earlier versions did not provide `--version`, so grep the full output to extract Assembler ID string
     string(REGEX MATCH "IAR Assembler[^\r\n]*" _compileid "${CMAKE_ASM${ASM_DIALECT}_COMPILER_ID_OUTPUT}")
     if("${_compileid}" MATCHES "V([0-9]+\\.[0-9]+\\.[0-9]+)")
       set(CMAKE_ASM${ASM_DIALECT}_COMPILER_VERSION ${CMAKE_MATCH_1})
     endif()
-    string(REGEX MATCHALL "([A-Za-z0-9-]+)" _all_compileid_matches "${_compileid}")
-    if(_all_compileid_matches)
-      list(GET _all_compileid_matches "-1" CMAKE_ASM${ASM_DIALECT}_COMPILER_ARCHITECTURE_ID)
+    if("${_compileid}" MATCHES "for.*(MSP430|8051|ARM|AVR|RH850|RISC-?V|RL78|RX|STM8|V850)")
+      set(CMAKE_ASM${ASM_DIALECT}_COMPILER_ARCHITECTURE_ID ${CMAKE_MATCH_1})
     endif()
   elseif("x${CMAKE_ASM${ASM_DIALECT}_COMPILER_ID}" STREQUAL "xRENESAS")
     # primary necessary to detect architecture, so the right command line options can be used. ex.
@@ -183,7 +182,9 @@ if(CMAKE_ASM${ASM_DIALECT}_COMPILER_ID)
   else()
     set(_version "")
   endif()
-  if(CMAKE_ASM${ASM_DIALECT}_COMPILER_ARCHITECTURE_ID AND "x${CMAKE_ASM${ASM_DIALECT}_COMPILER_ID}" MATCHES "xIAR|xRENESAS")
+  if(CMAKE_ASM${ASM_DIALECT}_COMPILER_ARCHITECTURE_ID AND "x${CMAKE_ASM${ASM_DIALECT}_COMPILER_ID}" STREQUAL "xIAR")
+    set(_archid " ${CMAKE_ASM${ASM_DIALECT}_COMPILER_ARCHITECTURE_ID}")
+  elseif(CMAKE_ASM${ASM_DIALECT}_COMPILER_ARCHITECTURE_ID AND "x${CMAKE_ASM${ASM_DIALECT}_COMPILER_ID}" STREQUAL "xRENESAS")
     set(_archid " ${CMAKE_ASM${ASM_DIALECT}_COMPILER_ARCHITECTURE_ID}")
   else()
     set(_archid "")

@@ -1,10 +1,12 @@
-cmake_minimum_required(VERSION 3.24.2 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.26.0 FATAL_ERROR)
 
 project(RH850F1KM_SampleProject C ASM)
 
 set(GSG_BASE_DIR ${CMAKE_SOURCE_DIR})
 
-set(DEBUG_RSP_FILE FALSE) # TRUE or FALSE
+if(NOT DEFINED DEBUG_RSP_FILE)
+    set(DEBUG_RSP_FILE FALSE) # TRUE or FALSE
+endif()
 include(${GSG_BASE_DIR}/dbg_rspf_src/CMakeLists_DEBUG_RSP_FILE.txt)
 
 if(COMMAND SET_DIRECTORY_OPTIONS)
