@@ -1,18 +1,32 @@
-cmake_minimum_required(VERSION 3.26.0 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.26.0 FATAL_ERROR) # 3.26.0-rc2 or later
 
-if(CMAKE_TOOLCHAIN_FILE MATCHES "(ex2xx|ex4xx|ex6xx)")
-    include(${CMAKE_TOOLCHAIN_FILE}) # For the `EXAMPLE_CXX_PROJ_TYPE` variable.
+if(CMAKE_TOOLCHAIN_FILE MATCHES ".*(ex2xx|ex4xx|ex6xx)\\.cmake" AND NOT EXAMPLE_CXX_PROJ_TYPE)
+    # The following setting is to test the language definition order issue in project() (or enable_language()).
+    set(EXAMPLE_CXX_PROJ_TYPE 1) # 1: The order is `CXX C`. or 2: The order is `C CXX`.
 endif()
 
-if(NOT DEFINED EXAMPLE_CXX_PROJ_TYPE)
+if(CMAKE_TOOLCHAIN_FILE MATCHES ".*/cross\\.cmake$")
+
+    # The following setting can be set to 1 or 2 for CXX project example.
+    #set(EXAMPLE_CXX_PROJ_TYPE 1) # Not defined: Not CXX project. or 1: The order is `CXX C`. or 2: The order is `C CXX`.
+
+endif()
+
+if(NOT EXAMPLE_CXX_PROJ_TYPE)
+
     project(tb_rx65n C ASM)
     set(CPPAPP_DEF 0)
+
 elseif(EXAMPLE_CXX_PROJ_TYPE EQUAL 1)
+
     project(tb_rx65n CXX C ASM)
     set(CPPAPP_DEF 1)
+
 elseif(EXAMPLE_CXX_PROJ_TYPE EQUAL 2)
+
     project(tb_rx65n C CXX ASM)
     set(CPPAPP_DEF 1)
+
 endif()
 
 set(GSG_BASE_DIR ${CMAKE_SOURCE_DIR})

@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.26.0 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.26.0 FATAL_ERROR) # 3.26.0-rc2 or later
 
 project(rl78g23_fpb C ASM)
 
