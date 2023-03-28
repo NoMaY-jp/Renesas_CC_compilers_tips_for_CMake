@@ -19,7 +19,7 @@ endif()
 else()
 message("DEBUG: RENESAS_COMPILER_AUTO_DETECT is ON")
 
-set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/../../cmake-3.26.0-patch/Modules") # For patches and support module for Renesas CC compilers.
+include(${CMAKE_CURRENT_LIST_DIR}/set-cmake-module-path-for-patches-detecting-renesas-cc-compilers.cmake) # For patches and support module for Renesas CC compilers.
 #set(CMAKE_SYSTEM_NAME Generic) # The `Generic` can be specified. (Also in the above NOT RENESAS_COMPILER_AUTO_DETECT case.)
 
 endif()

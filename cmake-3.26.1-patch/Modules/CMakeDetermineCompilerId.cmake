@@ -208,6 +208,31 @@ function(CMAKE_DETERMINE_COMPILER_ID lang flagvar src)
     endif()
   endif()
 
+  # The Renesas CC-RX compiler needs that the environment variable BIN_RX is set.
+  if(CMAKE_${lang}_COMPILER MATCHES "^(.*/)?ccrx(\\.exe)?$")
+    # Save the current BIN_RX environment variables
+    # and set it to the path of the Renesas compiler.
+    set(_orig_bin_rx $ENV{BIN_RX})
+    set(ENV{BIN_RX} ${CMAKE_MATCH_1})
+
+    foreach(userflags "${CMAKE_${lang}_COMPILER_ID_FLAGS_LIST}" "")
+      foreach(testflags ${CMAKE_${lang}_COMPILER_ID_TEST_FLAGS_FIRST} "" ${CMAKE_${lang}_COMPILER_ID_TEST_FLAGS})
+        __determine_compiler_id_test(testflags userflags)
+        if(CMAKE_${lang}_COMPILER_ID)
+          break()
+        endif()
+      endforeach()
+      if(CMAKE_${lang}_COMPILER_ID)
+        break()
+      endif()
+    endforeach()
+
+    # Restore the original BIN_RX if the Renesas compiler is not detected.
+    if(NOT "x${CMAKE_${lang}_COMPILER_ID}" STREQUAL "xRENESAS")
+      set(ENV{BIN_RX} ${_orig_bin_rx})
+    endif()
+  endif()
+
   # if the format is unknown after all files have been checked, put "Unknown" in the cache
   if(NOT CMAKE_EXECUTABLE_FORMAT)
     set(CMAKE_EXECUTABLE_FORMAT "Unknown" CACHE INTERNAL "Executable file format")
@@ -268,6 +293,8 @@ function(CMAKE_DETERMINE_COMPILER_ID lang flagvar src)
     endif()
     if(CMAKE_${lang}_COMPILER_ARCHITECTURE_ID AND "x${CMAKE_${lang}_COMPILER_ID}" STREQUAL "xIAR")
       set(_archid " ${CMAKE_${lang}_COMPILER_ARCHITECTURE_ID}")
+    elseif(CMAKE_${lang}_COMPILER_ARCHITECTURE_ID AND "x${CMAKE_${lang}_COMPILER_ID}" STREQUAL "xRENESAS")
+      set(_archid " ${CMAKE_${lang}_COMPILER_ARCHITECTURE_ID}")
     else()
       set(_archid "")
     endif()
@@ -308,7 +335,8 @@ include(CMakeCompilerIdDetection)
 #-----------------------------------------------------------------------------
 # Function to write the compiler id source file.
 function(CMAKE_DETERMINE_COMPILER_ID_WRITE lang src)
-  find_file(src_in ${src}.in PATHS ${CMAKE_ROOT}/Modules ${CMAKE_MODULE_PATH} NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
+  find_file(src_in ${src}.in PATHS ${CMAKE_MODULE_PATH} ${CMAKE_ROOT}/Modules NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
+  #### ^^^^ temporary modification # original: find_file(src_in ${src}.in PATHS ${CMAKE_ROOT}/Modules ${CMAKE_MODULE_PATH} NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
   file(READ ${src_in} ID_CONTENT_IN)
 
   compiler_id_detection(CMAKE_${lang}_COMPILER_ID_CONTENT ${lang}
@@ -1144,7 +1172,7 @@ function(CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX lang userflags)
     ENCODING AUTO # cl prints in console output code page
     )
   string(REPLACE "\n" "\n  " msg "  ${out}")
-  if(res EQUAL 0 AND "${out}" MATCHES "(^|\n)([^:\n][^:\n]+:[^:\n]*[^: \n][^: \n]:?[ \t]+)[A-Za-z]:\\\\")
+  if(res EQUAL 0 AND "${out}" MATCHES "(^|\n)([^:\n][^:\n]+:[^:\n]*[^: \n][^: \n]:?[ \t]+)([A-Za-z]:\\\\|\\./)")
     set(CMAKE_${lang}_CL_SHOWINCLUDES_PREFIX "${CMAKE_MATCH_2}" PARENT_SCOPE)
     string(APPEND msg "\nFound prefix \"${CMAKE_MATCH_2}\"")
   else()
