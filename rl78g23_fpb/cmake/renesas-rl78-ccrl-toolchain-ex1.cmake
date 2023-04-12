@@ -30,6 +30,7 @@ set(CMAKE_C_COMPILER ccrl -cpu=S3)
 #########
 
 set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_FLAGS ${INTELLISENSE_HELPER_C_FLAGS}) # Tell IntelliSence engine about workaround flags.
 
 set(CMAKE_EXE_LINKER_FLAGS "\
 -library=rl78em4r.lib,rl78em4s99.lib,malloc_n.lib \

@@ -125,4 +125,7 @@
             "name": "Unix Makefiles"
         }
     }
+
+    // https://github.com/microsoft/vscode-cmake-tools/blob/main/docs/README.md#cmake-tools-for-visual-studio-code-documentation
+    // https://github.com/microsoft/vscode-cmake-tools/blob/main/docs/kits.md#kit-options
 ]

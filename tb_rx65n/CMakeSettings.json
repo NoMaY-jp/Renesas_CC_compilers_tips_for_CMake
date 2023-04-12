@@ -2,219 +2,319 @@
   "configurations": [
     {
       "name": "Renesas RX65N CC-RX #1",
-      "generator": "Ninja",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex1_ninja",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rx-ccrx-toolchain-ex1.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Ninja",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RX/V3.05.00/include\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RX65N CC-RX #1 (Unix Makefiles Generator)",
-      "generator": "Unix Makefiles",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex1_unixmakefiles",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rx-ccrx-toolchain-ex1.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Unix Makefiles",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RX/V3.05.00/include\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RX65N CC-RX #2",
-      "generator": "Ninja",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex2_ninja",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rx-ccrx-toolchain-ex2.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Ninja",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RX/V3.05.00/include\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RX65N CC-RX #2 (Unix Makefiles Generator)",
-      "generator": "Unix Makefiles",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex2_unixmakefiles",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rx-ccrx-toolchain-ex2.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Unix Makefiles",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RX/V3.05.00/include\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RX65N CC-RX #2xx",
-      "generator": "Ninja",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex2xx_ninja",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rx-ccrx-toolchain-ex2xx.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Ninja",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-I\"C:/Renesas/CS+/CC/CC-RX/V3.05.00/include\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\"" // -std=c99 
+        },
+        {
+          "name": "INTELLISENSE_HELPER_CXX_FLAGS",
+          "value": "-I\"C:/Renesas/CS+/CC/CC-RX/V3.05.00/include\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\"" // -std=c++98 
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RX65N CC-RX #2xx (Unix Makefiles Generator)",
-      "generator": "Unix Makefiles",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex2xx_unixmakefiles",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rx-ccrx-toolchain-ex2xx.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+       "generator": "Unix Makefiles",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-I\"C:/Renesas/CS+/CC/CC-RX/V3.05.00/include\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\"" // -std=c99 
+        },
+        {
+          "name": "INTELLISENSE_HELPER_CXX_FLAGS",
+          "value": "-I\"C:/Renesas/CS+/CC/CC-RX/V3.05.00/include\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\"" // -std=c++98 
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RX65N CC-RX #3",
-      "generator": "Ninja",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex3_ninja",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rx-ccrx-toolchain-ex3.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Ninja",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RX/V3.05.00/include\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RX65N CC-RX #3 (Unix Makefiles Generator)",
-      "generator": "Unix Makefiles",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex3_unixmakefiles",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rx-ccrx-toolchain-ex3.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Unix Makefiles",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RX/V3.05.00/include\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RX65N CC-RX #4",
-      "generator": "Ninja",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex4_ninja",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rx-ccrx-toolchain-ex4.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Ninja",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RX/V3.05.00/include\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RX65N CC-RX #4 (Unix Makefiles Generator)",
-      "generator": "Unix Makefiles",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex4_unixmakefiles",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rx-ccrx-toolchain-ex4.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Unix Makefiles",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RX/V3.05.00/include\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RX65N CC-RX #4xx",
-      "generator": "Ninja",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex4xx_ninja",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rx-ccrx-toolchain-ex4xx.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Ninja",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RX/V3.05.00/include\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        },
+        {
+          "name": "INTELLISENSE_HELPER_CXX_FLAGS",
+          "value": "-std=c++98 -I\"C:/Renesas/CS+/CC/CC-RX/V3.05.00/include\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RX65N CC-RX #4xx (Unix Makefiles Generator)",
-      "generator": "Unix Makefiles",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex4xx_unixmakefiles",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rx-ccrx-toolchain-ex4xx.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Unix Makefiles",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RX/V3.05.00/include\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        },
+        {
+          "name": "INTELLISENSE_HELPER_CXX_FLAGS",
+          "value": "-std=c++98 -I\"C:/Renesas/CS+/CC/CC-RX/V3.05.00/include\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RX65N CC-RX #5",
-      "generator": "Ninja",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex5_ninja",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rx-ccrx-toolchain-ex5.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Ninja",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RX/V3.05.00/include\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RX65N CC-RX #5 (Unix Makefiles Generator)",
-      "generator": "Unix Makefiles",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex5_unixmakefiles",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rx-ccrx-toolchain-ex5.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Unix Makefiles",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RX/V3.05.00/include\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RX65N CC-RX #6",
-      "generator": "Ninja",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex6_ninja",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rx-ccrx-toolchain-ex6.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Ninja",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RX/V3.05.00/include\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RX65N CC-RX #6 (Unix Makefiles Generator)",
-      "generator": "Unix Makefiles",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex6_unixmakefiles",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rx-ccrx-toolchain-ex6.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Unix Makefiles",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RX/V3.05.00/include\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RX65N CC-RX #6xx",
-      "generator": "Ninja",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex6xx_ninja",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rx-ccrx-toolchain-ex6xx.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Ninja",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RX/V3.05.00/include\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        },
+        {
+          "name": "INTELLISENSE_HELPER_CXX_FLAGS",
+          "value": "-std=c++98 -I\"C:/Renesas/CS+/CC/CC-RX/V3.05.00/include\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RX65N CC-RX #6xx (Unix Makefiles Generator)",
-      "generator": "Unix Makefiles",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex6xx_unixmakefiles",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rx-ccrx-toolchain-ex6xx.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Unix Makefiles",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RX/V3.05.00/include\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        },
+        {
+          "name": "INTELLISENSE_HELPER_CXX_FLAGS",
+          "value": "-std=c++98 -I\"C:/Renesas/CS+/CC/CC-RX/V3.05.00/include\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     }
   ]
+
+  // https://learn.microsoft.com/cpp/build/cmake-projects-in-visual-studio
+  // https://learn.microsoft.com/cpp/build/cmake-presets-json-reference
+  // https://learn.microsoft.com/cpp/build/cmakesettings-reference
 }

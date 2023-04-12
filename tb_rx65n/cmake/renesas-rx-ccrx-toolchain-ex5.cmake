@@ -26,6 +26,7 @@ set(CMAKE_C_COMPILER ccrx -isa=rxv2)
 #set(CMAKE_RENESAS_XCONVERTER "") # In the case of CS+, define the tool as "" like this or exclude the tool from `Path`.
 
 set(CMAKE_C_STANDARD 99) # Tell `clangd` language server about the language standard. (This is global at least as of today.)
+set(CMAKE_C_FLAGS ${INTELLISENSE_HELPER_C_FLAGS}) # Tell IntelliSence engine about workaround flags.
 
 #########################
 macro(SET_TARGET_OPTIONS)

@@ -2,147 +2,199 @@
   "configurations": [
     {
       "name": "Renesas RL78G23 CC-RL #1",
-      "generator": "Ninja",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex1_ninja",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex1.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Ninja",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RL/V1.12.00/inc\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RL78G23 CC-RL #1 (Unix Makefiles Generator)",
-      "generator": "Unix Makefiles",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex1_unixmakefiles",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex1.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Unix Makefiles",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RL/V1.12.00/inc\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RL78G23 CC-RL #2",
-      "generator": "Ninja",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex2_ninja",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex2.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Ninja",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RL/V1.12.00/inc\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RL78G23 CC-RL #2 (Unix Makefiles Generator)",
-      "generator": "Unix Makefiles",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex2_unixmakefiles",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex2.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Unix Makefiles",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RL/V1.12.00/inc\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RL78G23 CC-RL #3",
-      "generator": "Ninja",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex3_ninja",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex3.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Ninja",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RL/V1.12.00/inc\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RL78G23 CC-RL #3 (Unix Makefiles Generator)",
-      "generator": "Unix Makefiles",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex3_unixmakefiles",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex3.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Unix Makefiles",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RL/V1.12.00/inc\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RL78G23 CC-RL #4",
-      "generator": "Ninja",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex4_ninja",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex4.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Ninja",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RL/V1.12.00/inc\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RL78G23 CC-RL #4 (Unix Makefiles Generator)",
-      "generator": "Unix Makefiles",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex4_unixmakefiles",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex4.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Unix Makefiles",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RL/V1.12.00/inc\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RL78G23 CC-RL #5",
-      "generator": "Ninja",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex5_ninja",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex5.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Ninja",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RL/V1.12.00/inc\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RL78G23 CC-RL #5 (Unix Makefiles Generator)",
-      "generator": "Unix Makefiles",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex5_unixmakefiles",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex5.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Unix Makefiles",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RL/V1.12.00/inc\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RL78G23 CC-RL #6",
-      "generator": "Ninja",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex6_ninja",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex6.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Ninja",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RL/V1.12.00/inc\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
       "name": "Renesas RL78G23 CC-RL #6 (Unix Makefiles Generator)",
-      "generator": "Unix Makefiles",
       "configurationType": "RelWithDebInfo",
-      "inheritEnvironments": [],
       "buildRoot": "${projectDir}/builds/ex6_unixmakefiles",
       "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
       "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex6.cmake",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "",
-      "ctestCommandArgs": ""
+      "generator": "Unix Makefiles",
+      "variables": [
+        {
+          "name": "INTELLISENSE_HELPER_C_FLAGS",
+          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RL/V1.12.00/inc\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86",
+      "intellisenseOptions": { "useCompilerDefaults": false }
     }
   ]
+
+  // https://learn.microsoft.com/cpp/build/cmake-projects-in-visual-studio
+  // https://learn.microsoft.com/cpp/build/cmake-presets-json-reference
+  // https://learn.microsoft.com/cpp/build/cmakesettings-reference
 }

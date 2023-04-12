@@ -36,6 +36,8 @@ set(CMAKE_ASM_FLAGS "-Xcpu=g3kh -goptimize -Xcharacter_set=utf8")
 set(CMAKE_C_FLAGS   "${CMAKE_C_FLAGS} -Xasm_option=-Xprn_path=. -Xcref=.")
 set(CMAKE_ASM_FLAGS "${CMAKE_ASM_FLAGS} -Xprn_path=.")
 
+string(JOIN " " CMAKE_C_FLAGS ${CMAKE_C_FLAGS} ${INTELLISENSE_HELPER_C_FLAGS}) # Tell IntelliSence engine about workaround flags.
+
 set(CMAKE_EXE_LINKER_FLAGS "-optimize=symbol_delete -entry=__cstart -stack \
 -library=v850e3v5/rhf8n.lib,v850e3v5/libmalloc.lib \
 -start=RESET/0,EIINTTBL.const/00000200,.const,.INIT_DSEC.const,.INIT_BSEC.const,.text,.data/00008000,.data.R,.bss,.stack.bss/FEDE8000 \
