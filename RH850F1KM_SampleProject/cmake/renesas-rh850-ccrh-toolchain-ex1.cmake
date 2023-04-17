@@ -30,7 +30,6 @@ set(CMAKE_C_COMPILER ccrh -Xcpu=g3kh)
 #########
 
 set(CMAKE_C_STANDARD 99)
-set(CMAKE_C_FLAGS ${INTELLISENSE_HELPER_C_FLAGS}) # Tell IntelliSence engine about workaround flags.
 
 set(CMAKE_EXE_LINKER_FLAGS "\
 -library=v850e3v5/rhf8n.lib,v850e3v5/libmalloc.lib \

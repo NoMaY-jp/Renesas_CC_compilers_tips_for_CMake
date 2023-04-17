@@ -36,8 +36,6 @@ set(CMAKE_ASM_FLAGS "-cpu=S3 -goptimize -character_set=utf8")
 set(CMAKE_C_FLAGS   "${CMAKE_C_FLAGS} -asmopt=-prn_path=. -cref=.")
 set(CMAKE_ASM_FLAGS "${CMAKE_ASM_FLAGS} -prn_path=.")
 
-string(JOIN " " CMAKE_C_FLAGS ${CMAKE_C_FLAGS} ${INTELLISENSE_HELPER_C_FLAGS}) # Tell IntelliSence engine about workaround flags.
-
 set(CMAKE_EXE_LINKER_FLAGS "-optimize=branch,symbol_delete -entry=_start -stack \
 -library=rl78em4r.lib,rl78em4s99.lib,malloc_n.lib \
 -device=DR7F100GLG.DVF \

@@ -23,8 +23,7 @@ set(EXTERNAL_TOOLCHAIN_PATH C:/Renesas/e2studio64/SupportFolders/.eclipse/com.re
 set(CMAKE_C_COMPILER ${TOOLCHAIN_PATH}/ccrl.exe)
 set(CMAKE_RENESAS_XCONVERTER ${EXTERNAL_TOOLCHAIN_PATH}/renesas_cc_converter.exe) # In the case of CS+, define the tool as "" or exclude the tool from `Path`.
 
-set(CMAKE_C_STANDARD 99) # Tell `clangd` language server about the language standard. (This is global at least as of today.)
-set(CMAKE_C_FLAGS ${INTELLISENSE_HELPER_C_FLAGS}) # Tell IntelliSence engine about workaround flags.
+set(CMAKE_C_STANDARD 99) # Tell the support module for Renesas CC compilers about the language standard for initial setting.
 
 #########################
 macro(SET_TARGET_OPTIONS)

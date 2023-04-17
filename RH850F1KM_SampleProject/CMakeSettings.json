@@ -9,8 +9,8 @@
       "generator": "Ninja",
       "variables": [
         {
-          "name": "INTELLISENSE_HELPER_C_FLAGS",
-          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RH/V2.05.00/inc\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
         }
       ],
       "intelliSenseMode": "windows-clang-x86",
@@ -25,8 +25,8 @@
       "generator": "Unix Makefiles",
       "variables": [
         {
-          "name": "INTELLISENSE_HELPER_C_FLAGS",
-          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RH/V2.05.00/inc\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
         }
       ],
       "intelliSenseMode": "windows-clang-x86",
@@ -41,8 +41,8 @@
       "generator": "Ninja",
       "variables": [
         {
-          "name": "INTELLISENSE_HELPER_C_FLAGS",
-          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RH/V2.05.00/inc\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
         }
       ],
       "intelliSenseMode": "windows-clang-x86",
@@ -57,8 +57,8 @@
       "generator": "Unix Makefiles",
       "variables": [
         {
-          "name": "INTELLISENSE_HELPER_C_FLAGS",
-          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RH/V2.05.00/inc\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
         }
       ],
       "intelliSenseMode": "windows-clang-x86",
@@ -73,8 +73,8 @@
       "generator": "Ninja",
       "variables": [
         {
-          "name": "INTELLISENSE_HELPER_C_FLAGS",
-          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RH/V2.05.00/inc\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
         }
       ],
       "intelliSenseMode": "windows-clang-x86",
@@ -89,8 +89,8 @@
       "generator": "Unix Makefiles",
       "variables": [
         {
-          "name": "INTELLISENSE_HELPER_C_FLAGS",
-          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RH/V2.05.00/inc\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
         }
       ],
       "intelliSenseMode": "windows-clang-x86",
@@ -105,8 +105,8 @@
       "generator": "Ninja",
       "variables": [
         {
-          "name": "INTELLISENSE_HELPER_C_FLAGS",
-          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RH/V2.05.00/inc\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
         }
       ],
       "intelliSenseMode": "windows-clang-x86",
@@ -121,8 +121,8 @@
       "generator": "Unix Makefiles",
       "variables": [
         {
-          "name": "INTELLISENSE_HELPER_C_FLAGS",
-          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RH/V2.05.00/inc\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
         }
       ],
       "intelliSenseMode": "windows-clang-x86",
@@ -137,8 +137,8 @@
       "generator": "Ninja",
       "variables": [
         {
-          "name": "INTELLISENSE_HELPER_C_FLAGS",
-          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RH/V2.05.00/inc\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
         }
       ],
       "intelliSenseMode": "windows-clang-x86",
@@ -153,8 +153,8 @@
       "generator": "Unix Makefiles",
       "variables": [
         {
-          "name": "INTELLISENSE_HELPER_C_FLAGS",
-          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RH/V2.05.00/inc\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
         }
       ],
       "intelliSenseMode": "windows-clang-x86",
@@ -169,8 +169,8 @@
       "generator": "Ninja",
       "variables": [
         {
-          "name": "INTELLISENSE_HELPER_C_FLAGS",
-          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RH/V2.05.00/inc\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
         }
       ],
       "intelliSenseMode": "windows-clang-x86",
@@ -185,8 +185,8 @@
       "generator": "Unix Makefiles",
       "variables": [
         {
-          "name": "INTELLISENSE_HELPER_C_FLAGS",
-          "value": "-std=c99 -I\"C:/Renesas/CS+/CC/CC-RH/V2.05.00/inc\" -include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
         }
       ],
       "intelliSenseMode": "windows-clang-x86",

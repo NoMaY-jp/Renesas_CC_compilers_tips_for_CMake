@@ -43,9 +43,7 @@ elseif(EXAMPLE_CXX_PROJ_TYPE EQUAL 2)
 endif()
 set(CMAKE_RENESAS_XCONVERTER ${EXTERNAL_TOOLCHAIN_PATH}/renesas_cc_converter.exe) # In the case of CS+, define the tool as "" or exclude the tool from `Path`.
 
-set(CMAKE_C_STANDARD 99) # Tell `clangd` language server about the language standard. (This is global at least as of today.)
-set(CMAKE_C_FLAGS ${INTELLISENSE_HELPER_C_FLAGS}) # Tell IntelliSence engine about workaround flags.
-set(CMAKE_CXX_FLAGS ${INTELLISENSE_HELPER_CXX_FLAGS}) # Tell IntelliSence engine about workaround flags.
+set(CMAKE_C_STANDARD 99) # Tell the support module for Renesas CC compilers about the language standard for initial setting.
 
 ############################
 macro(SET_DIRECTORY_OPTIONS)

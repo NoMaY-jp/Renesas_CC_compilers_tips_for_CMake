@@ -67,13 +67,6 @@ set(CMAKE_ASM_FLAGS "-isa=rxv2 -goptimize -utf8")
 set(CMAKE_ASM_FLAGS "${CMAKE_ASM_FLAGS} -listfile=. -define=aaa,bbb=999,ccc,ddd=\"qqq\",eee") # Somehow not `"qqq"` but `qqq` is passed to the assembler.
 set(CMAKE_ASM_FLAGS "${CMAKE_ASM_FLAGS} -debug") # This line is intended for test purpose.
 
-# FIXME: This workaround doesn't work because -std flag conflicts.
-if(EXAMPLE_CXX_PROJ_TYPE EQUAL 1)
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${INTELLISENSE_HELPER_CXX_FLAGS}") # Tell IntelliSence engine about workaround flags.
-else()
-  set(CMAKE_C_FLAGS   "${CMAKE_C_FLAGS}   ${INTELLISENSE_HELPER_C_FLAGS}") # Tell IntelliSence engine about workaround flags.
-endif()
-
 if(EXAMPLE_CXX_PROJ_TYPE EQUAL 1)
   set(CMAKE_LBG_FLAGS "${CMAKE_CXX_FLAGS}") #-head=runtime,ctype,math,mathf,stdarg,stdio,stdlib,string,ios,new,complex,cppstring,c99_complex,fenv,inttypes,wchar,wctype")
 else()
