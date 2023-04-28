@@ -1,20 +1,7 @@
-#set(RENESAS_COMPILER_AUTO_DETECT ON) # ON: Do the compiler detection process with patches, Undefined or OFF: Eliminate the process.
-if(NOT CMAKE_MODULE_PATH) # Somehow checking RENESAS_COMPILER_AUTO_DETECT needs this guard. I can't guess the root cause.
-if(NOT RENESAS_COMPILER_AUTO_DETECT)
-message("DEBUG: RENESAS_COMPILER_AUTO_DETECT is OFF")
-
-set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/../../CMake-Compiler-RENESAS/Modules") # Tell CMake the path of support module for Renesas CC compilers.
+set(CMAKE_SYSTEM_NAME Generic) # Tell CMake that this toolchain file is to be used for cross-compiling.
+set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/Modules") # Tell CMake the path of support module for Renesas CC compilers.
 set(CMAKE_C_COMPILER_ID RENESAS) # Tell CMake that the target compiler is one of Renesas CC compilers.
 set(CMAKE_C_COMPILER_ID_RUN TRUE) # Tell CMake that the compiler detection process must be eliminated.
-
-else()
-message("DEBUG: RENESAS_COMPILER_AUTO_DETECT is ON")
-
-include(${CMAKE_CURRENT_LIST_DIR}/set-cmake-module-path-for-patches-detecting-renesas-cc-compilers.cmake) # For patches and support module for Renesas CC compilers.
-#set(CMAKE_SYSTEM_NAME Generic) # The `Generic` can be specified. (Also in the above NOT RENESAS_COMPILER_AUTO_DETECT case.)
-
-endif()
-endif()
 
 # You can set the tool paths here in stead of setting the environment variable `Path` on Windows.
 set(TOOLCHAIN_PATH C:/Renesas/CS+/CC/CC-RX/V3.05.00/bin) # Quote the path with "..." if it includes space.
