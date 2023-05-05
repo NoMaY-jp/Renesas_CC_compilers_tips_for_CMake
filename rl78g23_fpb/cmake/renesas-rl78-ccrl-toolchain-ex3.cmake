@@ -73,6 +73,12 @@ endmacro()
 # <compiler path>/lib
 # <compiler path>
 
+# Additionally, in the case of CC-RL C++14, if `-library=` is specified with relative paths,
+# one of the following folders is also searched depending on `-cpu=' option used for compiler.
+# <compiler path>/lib/cxx/s1
+# <compiler path>/lib/cxx/s2
+# <compiler path>/lib/cxx/s3
+
 # If `-device=` is specified with relative path, either of the following folders is also searched.
 # <install path of CS+ for CC>/Device/RL78/Devicefile
 # <support area path of e2 studio>/DebugComp/RL78/RL78/Common

@@ -28,6 +28,20 @@
         }
     },
     {
+        "name": "Renesas RL78/G23 CC-RL #2xx",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rl78-ccrl-toolchain-ex2xx.cmake",
+        "preferredGenerator": {
+            "name": "Ninja"
+        }
+    },
+    {
+        "name": "Renesas RL78/G23 CC-RL #2xx (Unix Makefiles Generator)",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rl78-ccrl-toolchain-ex2xx.cmake",
+        "preferredGenerator": {
+            "name": "Unix Makefiles"
+        }
+    },
+    {
         "name": "Renesas RL78/G23 CC-RL #3",
         "toolchainFile": "${workspaceFolder}/cmake/renesas-rl78-ccrl-toolchain-ex3.cmake",
         "preferredGenerator": {
@@ -56,6 +70,20 @@
         }
     },
     {
+        "name": "Renesas RL78/G23 CC-RL #4xx",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rl78-ccrl-toolchain-ex4xx.cmake",
+        "preferredGenerator": {
+            "name": "Ninja"
+        }
+    },
+    {
+        "name": "Renesas RL78/G23 CC-RL #4xx (Unix Makefiles Generator)",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rl78-ccrl-toolchain-ex4xx.cmake",
+        "preferredGenerator": {
+            "name": "Unix Makefiles"
+        }
+    },
+    {
         "name": "Renesas RL78/G23 CC-RL #5",
         "toolchainFile": "${workspaceFolder}/cmake/renesas-rl78-ccrl-toolchain-ex5.cmake",
         "preferredGenerator": {
@@ -79,6 +107,20 @@
     {
         "name": "Renesas RL78/G23 CC-RL #6 (Unix Makefiles Generator)",
         "toolchainFile": "${workspaceFolder}/cmake/renesas-rl78-ccrl-toolchain-ex6.cmake",
+        "preferredGenerator": {
+            "name": "Unix Makefiles"
+        }
+    },
+    {
+        "name": "Renesas RL78/G23 CC-RL #6xx",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rl78-ccrl-toolchain-ex6xx.cmake",
+        "preferredGenerator": {
+            "name": "Ninja"
+        }
+    },
+    {
+        "name": "Renesas RL78/G23 CC-RL #6xx (Unix Makefiles Generator)",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rl78-ccrl-toolchain-ex6xx.cmake",
         "preferredGenerator": {
             "name": "Unix Makefiles"
         }
