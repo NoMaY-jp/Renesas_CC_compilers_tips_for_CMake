@@ -1,126 +1,252 @@
 [
+//    {
+//        "name": "Renesas RX65N CC-RX #1",
+//        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex1.cmake",
+//        "preferredGenerator": {
+//            "name": "Ninja"
+//        }
+//    },
+//    {
+//        "name": "Renesas RX65N CC-RX #1 (Unix Makefiles Generator)",
+//        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex1.cmake",
+//        "preferredGenerator": {
+//            "name": "Unix Makefiles"
+//        }
+//    },
+//    {
+//        "name": "Renesas RX65N CC-RX #2",
+//        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex2.cmake",
+//        "preferredGenerator": {
+//            "name": "Ninja"
+//        }
+//    },
+//    {
+//        "name": "Renesas RX65N CC-RX #2 (Unix Makefiles Generator)",
+//        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex2.cmake",
+//        "preferredGenerator": {
+//            "name": "Unix Makefiles"
+//        }
+//    },
+//    {
+//        "name": "Renesas RX65N CC-RX #2xx",
+//        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex2xx.cmake",
+//        "preferredGenerator": {
+//            "name": "Ninja"
+//        }
+//    },
+//    {
+//        "name": "Renesas RX65N CC-RX #2xx (Unix Makefiles Generator)",
+//        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex2xx.cmake",
+//        "preferredGenerator": {
+//            "name": "Unix Makefiles"
+//        }
+//    },
+//    {
+//        "name": "Renesas RX65N CC-RX #3",
+//        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex3.cmake",
+//        "preferredGenerator": {
+//            "name": "Ninja"
+//        }
+//    },
+//    {
+//        "name": "Renesas RX65N CC-RX #3 (Unix Makefiles Generator)",
+//        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex3.cmake",
+//        "preferredGenerator": {
+//            "name": "Unix Makefiles"
+//        }
+//    },
+//    {
+//        "name": "Renesas RX65N CC-RX #4",
+//        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex4.cmake",
+//        "preferredGenerator": {
+//            "name": "Ninja"
+//        }
+//    },
+//    {
+//        "name": "Renesas RX65N CC-RX #4 (Unix Makefiles Generator)",
+//        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex4.cmake",
+//        "preferredGenerator": {
+//            "name": "Unix Makefiles"
+//        }
+//    },
+//    {
+//        "name": "Renesas RX65N CC-RX #4xx",
+//        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex4xx.cmake",
+//        "preferredGenerator": {
+//            "name": "Ninja"
+//        }
+//    },
+//    {
+//        "name": "Renesas RX65N CC-RX #4xx (Unix Makefiles Generator)",
+//        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex4xx.cmake",
+//        "preferredGenerator": {
+//            "name": "Unix Makefiles"
+//        }
+//    },
+//    {
+//        "name": "Renesas RX65N CC-RX #5",
+//        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex5.cmake",
+//        "preferredGenerator": {
+//            "name": "Ninja"
+//        }
+//    },
+//    {
+//        "name": "Renesas RX65N CC-RX #5 (Unix Makefiles Generator)",
+//        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex5.cmake",
+//        "preferredGenerator": {
+//            "name": "Unix Makefiles"
+//        }
+//    },
+//    {
+//        "name": "Renesas RX65N CC-RX #6",
+//        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex6.cmake",
+//        "preferredGenerator": {
+//            "name": "Ninja"
+//        }
+//    },
+//    {
+//        "name": "Renesas RX65N CC-RX #6 (Unix Makefiles Generator)",
+//        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex6.cmake",
+//        "preferredGenerator": {
+//            "name": "Unix Makefiles"
+//        }
+//    },
+//    {
+//        "name": "Renesas RX65N CC-RX #6xx",
+//        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex6xx.cmake",
+//        "preferredGenerator": {
+//            "name": "Ninja"
+//        }
+//    },
+//    {
+//        "name": "Renesas RX65N CC-RX #6xx (Unix Makefiles Generator)",
+//        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex6xx.cmake",
+//        "preferredGenerator": {
+//            "name": "Unix Makefiles"
+//        }
+//    },
     {
-        "name": "Renesas RX65N CC-RX #1",
-        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex1.cmake",
+        "name": "Renesas RX65N CC-RX #11",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex11.cmake",
         "preferredGenerator": {
             "name": "Ninja"
         }
     },
     {
-        "name": "Renesas RX65N CC-RX #1 (Unix Makefiles Generator)",
-        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex1.cmake",
+        "name": "Renesas RX65N CC-RX #11 (Unix Makefiles Generator)",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex11.cmake",
         "preferredGenerator": {
             "name": "Unix Makefiles"
         }
     },
     {
-        "name": "Renesas RX65N CC-RX #2",
-        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex2.cmake",
+        "name": "Renesas RX65N CC-RX #12",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex12.cmake",
         "preferredGenerator": {
             "name": "Ninja"
         }
     },
     {
-        "name": "Renesas RX65N CC-RX #2 (Unix Makefiles Generator)",
-        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex2.cmake",
+        "name": "Renesas RX65N CC-RX #12 (Unix Makefiles Generator)",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex12.cmake",
         "preferredGenerator": {
             "name": "Unix Makefiles"
         }
     },
     {
-        "name": "Renesas RX65N CC-RX #2xx",
-        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex2xx.cmake",
+        "name": "Renesas RX65N CC-RX #12xx",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex12xx.cmake",
         "preferredGenerator": {
             "name": "Ninja"
         }
     },
     {
-        "name": "Renesas RX65N CC-RX #2xx (Unix Makefiles Generator)",
-        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex2xx.cmake",
+        "name": "Renesas RX65N CC-RX #12xx (Unix Makefiles Generator)",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex12xx.cmake",
         "preferredGenerator": {
             "name": "Unix Makefiles"
         }
     },
     {
-        "name": "Renesas RX65N CC-RX #3",
-        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex3.cmake",
+        "name": "Renesas RX65N CC-RX #13",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex13.cmake",
         "preferredGenerator": {
             "name": "Ninja"
         }
     },
     {
-        "name": "Renesas RX65N CC-RX #3 (Unix Makefiles Generator)",
-        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex3.cmake",
+        "name": "Renesas RX65N CC-RX #13 (Unix Makefiles Generator)",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex13.cmake",
         "preferredGenerator": {
             "name": "Unix Makefiles"
         }
     },
     {
-        "name": "Renesas RX65N CC-RX #4",
-        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex4.cmake",
+        "name": "Renesas RX65N CC-RX #14",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex14.cmake",
         "preferredGenerator": {
             "name": "Ninja"
         }
     },
     {
-        "name": "Renesas RX65N CC-RX #4 (Unix Makefiles Generator)",
-        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex4.cmake",
+        "name": "Renesas RX65N CC-RX #14 (Unix Makefiles Generator)",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex14.cmake",
         "preferredGenerator": {
             "name": "Unix Makefiles"
         }
     },
     {
-        "name": "Renesas RX65N CC-RX #4xx",
-        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex4xx.cmake",
+        "name": "Renesas RX65N CC-RX #14xx",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex14xx.cmake",
         "preferredGenerator": {
             "name": "Ninja"
         }
     },
     {
-        "name": "Renesas RX65N CC-RX #4xx (Unix Makefiles Generator)",
-        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex4xx.cmake",
+        "name": "Renesas RX65N CC-RX #14xx (Unix Makefiles Generator)",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex14xx.cmake",
         "preferredGenerator": {
             "name": "Unix Makefiles"
         }
     },
     {
-        "name": "Renesas RX65N CC-RX #5",
-        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex5.cmake",
+        "name": "Renesas RX65N CC-RX #15",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex15.cmake",
         "preferredGenerator": {
             "name": "Ninja"
         }
     },
     {
-        "name": "Renesas RX65N CC-RX #5 (Unix Makefiles Generator)",
-        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex5.cmake",
+        "name": "Renesas RX65N CC-RX #15 (Unix Makefiles Generator)",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex15.cmake",
         "preferredGenerator": {
             "name": "Unix Makefiles"
         }
     },
     {
-        "name": "Renesas RX65N CC-RX #6",
-        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex6.cmake",
+        "name": "Renesas RX65N CC-RX #16",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex16.cmake",
         "preferredGenerator": {
             "name": "Ninja"
         }
     },
     {
-        "name": "Renesas RX65N CC-RX #6 (Unix Makefiles Generator)",
-        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex6.cmake",
+        "name": "Renesas RX65N CC-RX #16 (Unix Makefiles Generator)",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex16.cmake",
         "preferredGenerator": {
             "name": "Unix Makefiles"
         }
     },
     {
-        "name": "Renesas RX65N CC-RX #6xx",
-        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex6xx.cmake",
+        "name": "Renesas RX65N CC-RX #16xx",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex16xx.cmake",
         "preferredGenerator": {
             "name": "Ninja"
         }
     },
     {
-        "name": "Renesas RX65N CC-RX #6xx (Unix Makefiles Generator)",
-        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex6xx.cmake",
+        "name": "Renesas RX65N CC-RX #16xx (Unix Makefiles Generator)",
+        "toolchainFile": "${workspaceFolder}/cmake/renesas-rx-ccrx-toolchain-ex16xx.cmake",
         "preferredGenerator": {
             "name": "Unix Makefiles"
         }

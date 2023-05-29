@@ -1,11 +1,203 @@
 {
   "configurations": [
+//    {
+//      "name": "Renesas RH850F1KM CC-RH #1",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex1_ninja",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex1.cmake",
+//      "generator": "Ninja",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RH850F1KM CC-RH #1 (Unix Makefiles Generator)",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex1_unixmakefiles",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex1.cmake",
+//      "generator": "Unix Makefiles",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RH850F1KM CC-RH #2",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex2_ninja",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex2.cmake",
+//      "generator": "Ninja",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RH850F1KM CC-RH #2 (Unix Makefiles Generator)",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex2_unixmakefiles",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex2.cmake",
+//      "generator": "Unix Makefiles",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RH850F1KM CC-RH #3",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex3_ninja",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex3.cmake",
+//      "generator": "Ninja",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RH850F1KM CC-RH #3 (Unix Makefiles Generator)",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex3_unixmakefiles",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex3.cmake",
+//      "generator": "Unix Makefiles",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RH850F1KM CC-RH #4",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex4_ninja",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex4.cmake",
+//      "generator": "Ninja",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RH850F1KM CC-RH #4 (Unix Makefiles Generator)",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex4_unixmakefiles",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex4.cmake",
+//      "generator": "Unix Makefiles",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RH850F1KM CC-RH #5",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex5_ninja",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex5.cmake",
+//      "generator": "Ninja",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RH850F1KM CC-RH #5 (Unix Makefiles Generator)",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex5_unixmakefiles",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex5.cmake",
+//      "generator": "Unix Makefiles",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RH850F1KM CC-RH #6",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex6_ninja",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex6.cmake",
+//      "generator": "Ninja",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RH850F1KM CC-RH #6 (Unix Makefiles Generator)",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex6_unixmakefiles",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex6.cmake",
+//      "generator": "Unix Makefiles",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
     {
-      "name": "Renesas RH850F1KM CC-RH #1",
+      "name": "Renesas RH850F1KM CC-RH #11",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex1_ninja",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex1.cmake",
+      "buildRoot": "${projectDir}/builds/ex11_ninja",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex11.cmake",
       "generator": "Ninja",
       "variables": [
         {
@@ -17,11 +209,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RH850F1KM CC-RH #1 (Unix Makefiles Generator)",
+      "name": "Renesas RH850F1KM CC-RH #11 (Unix Makefiles Generator)",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex1_unixmakefiles",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex1.cmake",
+      "buildRoot": "${projectDir}/builds/ex11_unixmakefiles",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex11.cmake",
       "generator": "Unix Makefiles",
       "variables": [
         {
@@ -33,11 +225,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RH850F1KM CC-RH #2",
+      "name": "Renesas RH850F1KM CC-RH #12",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex2_ninja",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex2.cmake",
+      "buildRoot": "${projectDir}/builds/ex12_ninja",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex12.cmake",
       "generator": "Ninja",
       "variables": [
         {
@@ -49,11 +241,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RH850F1KM CC-RH #2 (Unix Makefiles Generator)",
+      "name": "Renesas RH850F1KM CC-RH #12 (Unix Makefiles Generator)",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex2_unixmakefiles",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex2.cmake",
+      "buildRoot": "${projectDir}/builds/ex12_unixmakefiles",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex12.cmake",
       "generator": "Unix Makefiles",
       "variables": [
         {
@@ -65,11 +257,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RH850F1KM CC-RH #3",
+      "name": "Renesas RH850F1KM CC-RH #13",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex3_ninja",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex3.cmake",
+      "buildRoot": "${projectDir}/builds/ex13_ninja",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex13.cmake",
       "generator": "Ninja",
       "variables": [
         {
@@ -81,11 +273,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RH850F1KM CC-RH #3 (Unix Makefiles Generator)",
+      "name": "Renesas RH850F1KM CC-RH #13 (Unix Makefiles Generator)",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex3_unixmakefiles",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex3.cmake",
+      "buildRoot": "${projectDir}/builds/ex13_unixmakefiles",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex13.cmake",
       "generator": "Unix Makefiles",
       "variables": [
         {
@@ -97,11 +289,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RH850F1KM CC-RH #4",
+      "name": "Renesas RH850F1KM CC-RH #14",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex4_ninja",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex4.cmake",
+      "buildRoot": "${projectDir}/builds/ex14_ninja",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex14.cmake",
       "generator": "Ninja",
       "variables": [
         {
@@ -113,11 +305,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RH850F1KM CC-RH #4 (Unix Makefiles Generator)",
+      "name": "Renesas RH850F1KM CC-RH #14 (Unix Makefiles Generator)",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex4_unixmakefiles",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex4.cmake",
+      "buildRoot": "${projectDir}/builds/ex14_unixmakefiles",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex14.cmake",
       "generator": "Unix Makefiles",
       "variables": [
         {
@@ -129,11 +321,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RH850F1KM CC-RH #5",
+      "name": "Renesas RH850F1KM CC-RH #15",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex5_ninja",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex5.cmake",
+      "buildRoot": "${projectDir}/builds/ex15_ninja",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex15.cmake",
       "generator": "Ninja",
       "variables": [
         {
@@ -145,11 +337,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RH850F1KM CC-RH #5 (Unix Makefiles Generator)",
+      "name": "Renesas RH850F1KM CC-RH #15 (Unix Makefiles Generator)",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex5_unixmakefiles",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex5.cmake",
+      "buildRoot": "${projectDir}/builds/ex15_unixmakefiles",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex15.cmake",
       "generator": "Unix Makefiles",
       "variables": [
         {
@@ -161,11 +353,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RH850F1KM CC-RH #6",
+      "name": "Renesas RH850F1KM CC-RH #16",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex6_ninja",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex6.cmake",
+      "buildRoot": "${projectDir}/builds/ex16_ninja",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex16.cmake",
       "generator": "Ninja",
       "variables": [
         {
@@ -177,11 +369,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RH850F1KM CC-RH #6 (Unix Makefiles Generator)",
+      "name": "Renesas RH850F1KM CC-RH #16 (Unix Makefiles Generator)",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex6_unixmakefiles",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex6.cmake",
+      "buildRoot": "${projectDir}/builds/ex16_unixmakefiles",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rh850-ccrh-toolchain-ex16.cmake",
       "generator": "Unix Makefiles",
       "variables": [
         {

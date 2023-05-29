@@ -1,11 +1,299 @@
 {
   "configurations": [
+//    {
+//      "name": "Renesas RL78G23 CC-RL #1",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex1_ninja",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex1.cmake",
+//      "generator": "Ninja",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RL78G23 CC-RL #1 (Unix Makefiles Generator)",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex1_unixmakefiles",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex1.cmake",
+//      "generator": "Unix Makefiles",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RL78G23 CC-RL #2",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex2_ninja",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex2.cmake",
+//      "generator": "Ninja",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RL78G23 CC-RL #2 (Unix Makefiles Generator)",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex2_unixmakefiles",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex2.cmake",
+//      "generator": "Unix Makefiles",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RL78G23 CC-RL #2xx",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex2xx_ninja",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex2xx.cmake",
+//      "generator": "Ninja",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RL78G23 CC-RL #2xx (Unix Makefiles Generator)",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex2xx_unixmakefiles",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex2xx.cmake",
+//      "generator": "Unix Makefiles",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RL78G23 CC-RL #3",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex3_ninja",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex3.cmake",
+//      "generator": "Ninja",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RL78G23 CC-RL #3 (Unix Makefiles Generator)",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex3_unixmakefiles",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex3.cmake",
+//      "generator": "Unix Makefiles",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RL78G23 CC-RL #4",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex4_ninja",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex4.cmake",
+//      "generator": "Ninja",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RL78G23 CC-RL #4 (Unix Makefiles Generator)",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex4_unixmakefiles",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex4.cmake",
+//      "generator": "Unix Makefiles",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RL78G23 CC-RL #4xx",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex4xx_ninja",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex4xx.cmake",
+//      "generator": "Ninja",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RL78G23 CC-RL #4xx (Unix Makefiles Generator)",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex4xx_unixmakefiles",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex4xx.cmake",
+//      "generator": "Unix Makefiles",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RL78G23 CC-RL #5",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex5_ninja",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex5.cmake",
+//      "generator": "Ninja",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RL78G23 CC-RL #5 (Unix Makefiles Generator)",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex5_unixmakefiles",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex5.cmake",
+//      "generator": "Unix Makefiles",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RL78G23 CC-RL #6",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex6_ninja",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex6.cmake",
+//      "generator": "Ninja",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RL78G23 CC-RL #6 (Unix Makefiles Generator)",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex6_unixmakefiles",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex6.cmake",
+//      "generator": "Unix Makefiles",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RL78G23 CC-RL #6xx",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex6xx_ninja",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex6xx.cmake",
+//      "generator": "Ninja",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
+//    {
+//      "name": "Renesas RL78G23 CC-RL #6xx (Unix Makefiles Generator)",
+//      "configurationType": "RelWithDebInfo",
+//      "buildRoot": "${projectDir}/builds/ex6xx_unixmakefiles",
+////      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+//      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex6xx.cmake",
+//      "generator": "Unix Makefiles",
+//      "variables": [
+//        {
+//          "name": "RENESAS_INTELLISENSE_HELPER_EXTRA_FLAGS",
+//          "value": "-include\"${workspaceRoot}/.vs/c_cpp_intellisense_helper.h\""
+//        }
+//      ],
+//      "intelliSenseMode": "windows-clang-x86",
+//      "intellisenseOptions": { "useCompilerDefaults": false }
+//    },
     {
-      "name": "Renesas RL78G23 CC-RL #1",
+      "name": "Renesas RL78G23 CC-RL #11",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex1_ninja",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex1.cmake",
+      "buildRoot": "${projectDir}/builds/ex11_ninja",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex11.cmake",
       "generator": "Ninja",
       "variables": [
         {
@@ -17,11 +305,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RL78G23 CC-RL #1 (Unix Makefiles Generator)",
+      "name": "Renesas RL78G23 CC-RL #11 (Unix Makefiles Generator)",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex1_unixmakefiles",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex1.cmake",
+      "buildRoot": "${projectDir}/builds/ex11_unixmakefiles",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex11.cmake",
       "generator": "Unix Makefiles",
       "variables": [
         {
@@ -33,11 +321,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RL78G23 CC-RL #2",
+      "name": "Renesas RL78G23 CC-RL #12",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex2_ninja",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex2.cmake",
+      "buildRoot": "${projectDir}/builds/ex12_ninja",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex12.cmake",
       "generator": "Ninja",
       "variables": [
         {
@@ -49,11 +337,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RL78G23 CC-RL #2 (Unix Makefiles Generator)",
+      "name": "Renesas RL78G23 CC-RL #12 (Unix Makefiles Generator)",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex2_unixmakefiles",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex2.cmake",
+      "buildRoot": "${projectDir}/builds/ex12_unixmakefiles",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex12.cmake",
       "generator": "Unix Makefiles",
       "variables": [
         {
@@ -65,11 +353,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RL78G23 CC-RL #2xx",
+      "name": "Renesas RL78G23 CC-RL #12xx",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex2xx_ninja",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex2xx.cmake",
+      "buildRoot": "${projectDir}/builds/ex12xx_ninja",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex12xx.cmake",
       "generator": "Ninja",
       "variables": [
         {
@@ -81,11 +369,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RL78G23 CC-RL #2xx (Unix Makefiles Generator)",
+      "name": "Renesas RL78G23 CC-RL #12xx (Unix Makefiles Generator)",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex2xx_unixmakefiles",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex2xx.cmake",
+      "buildRoot": "${projectDir}/builds/ex12xx_unixmakefiles",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex12xx.cmake",
       "generator": "Unix Makefiles",
       "variables": [
         {
@@ -97,11 +385,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RL78G23 CC-RL #3",
+      "name": "Renesas RL78G23 CC-RL #13",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex3_ninja",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex3.cmake",
+      "buildRoot": "${projectDir}/builds/ex13_ninja",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex13.cmake",
       "generator": "Ninja",
       "variables": [
         {
@@ -113,11 +401,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RL78G23 CC-RL #3 (Unix Makefiles Generator)",
+      "name": "Renesas RL78G23 CC-RL #13 (Unix Makefiles Generator)",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex3_unixmakefiles",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex3.cmake",
+      "buildRoot": "${projectDir}/builds/ex13_unixmakefiles",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex13.cmake",
       "generator": "Unix Makefiles",
       "variables": [
         {
@@ -129,11 +417,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RL78G23 CC-RL #4",
+      "name": "Renesas RL78G23 CC-RL #14",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex4_ninja",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex4.cmake",
+      "buildRoot": "${projectDir}/builds/ex14_ninja",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex14.cmake",
       "generator": "Ninja",
       "variables": [
         {
@@ -145,11 +433,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RL78G23 CC-RL #4 (Unix Makefiles Generator)",
+      "name": "Renesas RL78G23 CC-RL #14 (Unix Makefiles Generator)",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex4_unixmakefiles",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex4.cmake",
+      "buildRoot": "${projectDir}/builds/ex14_unixmakefiles",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex14.cmake",
       "generator": "Unix Makefiles",
       "variables": [
         {
@@ -161,11 +449,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RL78G23 CC-RL #4xx",
+      "name": "Renesas RL78G23 CC-RL #14xx",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex4xx_ninja",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex4xx.cmake",
+      "buildRoot": "${projectDir}/builds/ex14xx_ninja",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex14xx.cmake",
       "generator": "Ninja",
       "variables": [
         {
@@ -177,11 +465,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RL78G23 CC-RL #4xx (Unix Makefiles Generator)",
+      "name": "Renesas RL78G23 CC-RL #14xx (Unix Makefiles Generator)",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex4xx_unixmakefiles",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex4xx.cmake",
+      "buildRoot": "${projectDir}/builds/ex14xx_unixmakefiles",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex14xx.cmake",
       "generator": "Unix Makefiles",
       "variables": [
         {
@@ -193,11 +481,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RL78G23 CC-RL #5",
+      "name": "Renesas RL78G23 CC-RL #15",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex5_ninja",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex5.cmake",
+      "buildRoot": "${projectDir}/builds/ex15_ninja",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex15.cmake",
       "generator": "Ninja",
       "variables": [
         {
@@ -209,11 +497,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RL78G23 CC-RL #5 (Unix Makefiles Generator)",
+      "name": "Renesas RL78G23 CC-RL #15 (Unix Makefiles Generator)",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex5_unixmakefiles",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex5.cmake",
+      "buildRoot": "${projectDir}/builds/ex15_unixmakefiles",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex15.cmake",
       "generator": "Unix Makefiles",
       "variables": [
         {
@@ -225,11 +513,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RL78G23 CC-RL #6",
+      "name": "Renesas RL78G23 CC-RL #16",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex6_ninja",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex6.cmake",
+      "buildRoot": "${projectDir}/builds/ex16_ninja",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex16.cmake",
       "generator": "Ninja",
       "variables": [
         {
@@ -241,11 +529,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RL78G23 CC-RL #6 (Unix Makefiles Generator)",
+      "name": "Renesas RL78G23 CC-RL #16 (Unix Makefiles Generator)",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex6_unixmakefiles",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex6.cmake",
+      "buildRoot": "${projectDir}/builds/ex16_unixmakefiles",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex16.cmake",
       "generator": "Unix Makefiles",
       "variables": [
         {
@@ -257,11 +545,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RL78G23 CC-RL #6xx",
+      "name": "Renesas RL78G23 CC-RL #16xx",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex6xx_ninja",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex6xx.cmake",
+      "buildRoot": "${projectDir}/builds/ex16xx_ninja",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex16xx.cmake",
       "generator": "Ninja",
       "variables": [
         {
@@ -273,11 +561,11 @@
       "intellisenseOptions": { "useCompilerDefaults": false }
     },
     {
-      "name": "Renesas RL78G23 CC-RL #6xx (Unix Makefiles Generator)",
+      "name": "Renesas RL78G23 CC-RL #16xx (Unix Makefiles Generator)",
       "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}/builds/ex6xx_unixmakefiles",
-      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
-      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex6xx.cmake",
+      "buildRoot": "${projectDir}/builds/ex16xx_unixmakefiles",
+//      "cmakeExecutable": "C:/Program Files/CMake/bin/cmake.exe",
+      "cmakeToolchain": "${projectDir}/cmake/renesas-rl78-ccrl-toolchain-ex16xx.cmake",
       "generator": "Unix Makefiles",
       "variables": [
         {
